@@ -69,7 +69,7 @@ class WxCourseController extends BaseController
         $tmp = ClubNews::model()->findAll('id='.$id);
         $s = ClubNews::model()->WxField();
         put_msg($s);
-        $tmp[0]->news_content = str_replace('<img src="','<img src="'.BasePath::model()->getParentPath(), $tmp[0]->news_content);
+        $tmp[0]->content = str_replace('<img src="','<img src="'.BasePath::model()->getParentPath(), $tmp[0]->content);
         $this->DataToWx($tmp,$s,'获取详情信息成功');
     }
 
