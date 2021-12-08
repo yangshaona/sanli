@@ -35,7 +35,7 @@ class BaseModel extends CActiveRecord {
         parent::afterDelete();
     }
 
-    protected function safeField() {
+    public function safeField() {
        $dm=$this->attributeLabels();
        $s1='';$b1='';
        foreach($dm as $k=>$v)

@@ -76,5 +76,27 @@ class ClubNewsController extends BaseController {
         
     }
 
+
+    //获取活动相关信息
+    public function actionGetClubNews(){
+        $news_code=DecodeAsk('news_code','测试');
+        put_msg($news_code);
+        $news_title=DecodeAsk('news_title','测试');
+        $s = ClubNews::model()->safeField();
+        $tmp =ClubNews::model()->findAll('id<=50');
+//        $s="news_code,news_title,news_introduction,news_type,news_address,sign_date_start,sign_date_end,sign_num,signIn_date_start,signIn_date_end,news_address";
+        $this->DataToWX($tmp,$s,'获取成功');
+    }
+
+    //输出JSON数据   第一个数组用于附加res.data 第二个数组附加res.data.data
+    public function DataToWx($tmp,$s,$msg,$arr=array(),$arr2=array()){
+        $data = toIoArray($tmp,$s,$arr2);
+        $total=is_array($tmp)?count($tmp):1;
+        $rs=array('data'=>$data,'total'=>$total,'code'=>'200','msg'=>$msg,'time' => time());
+        $rs=array_merge($rs,$arr);
+        echo json_encode($rs);
+    }
+
+
 }
 

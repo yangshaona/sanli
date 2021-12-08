@@ -2,7 +2,7 @@
 $db_host='localhost';
 $db_name="sanli";
 $db_user="root";
-$db_pass='';
+$db_pass='1234';
 Yii::setPathOfAlias('rootpath', ROOT_PATH);
 return array(
     'name' => '管理系统',
@@ -26,7 +26,7 @@ return array(
   'components' => array(
         'db' => array(
             'class' => 'system.db.CDbConnection',
-            'connectionString' => 'mysql:host='.$db_host.';port=3306;dbname='.$db_name,
+            'connectionString' => 'mysql:host='.$db_host.';port=3308;dbname='.$db_name,
             'emulatePrepare' => true,
             'username' => $db_user,
             'password' => $db_pass,

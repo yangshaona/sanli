@@ -1100,7 +1100,7 @@ function get_yii_path(){
         return $pw0;
     }
 //$pvalue=$club;
-   function get_where_club($pw0,$pfields,$pvalue='')
+   function get_where_club($pw0,$pwhere,$pfields,$pvalue='')
     {   
         if($pvalue=='undefined') $pvalue="";
         $pvalue=$_SESSION['use_club_id'];
@@ -1626,5 +1626,37 @@ function Yearsc(){
 }   
 function Termbm(){
   return  Semester::model()->getTerm();
-}  
+}
 
+function DecodeAsk($var,$default='0'){
+    return isset($_REQUEST[$var])?$_REQUEST[$var]:$default;
+}
+
+
+
+function toIoArray($cooperation,$afieldstr,$def_array=array())
+{
+    $arr=array();
+    if($def_array) $arr[] = $def_array;
+    $r=0;
+    $afieldstmp=explode(',',$afieldstr);
+    foreach($afieldstmp as $v1){
+        $a=explode(':',$v1);
+        $afields[$a[0]]=$a[0];
+        if(isset($a[1])) $afields[$a[0]] = $a[1];//有别名
+    }
+    if(is_array($cooperation))
+        foreach ($cooperation as $v) {
+            $ta=array();
+            foreach($afields as $k=>$v1){
+                if($k){
+                    $vs=$v[$k];
+                    if(empty($vs)) $vs="";
+                    $ta[$v1] = $vs;
+                }
+            }
+            $r=$r+1;
+            $arr[]=$ta;
+        }
+    return $arr;
+}
