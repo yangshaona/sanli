@@ -238,3 +238,118 @@ Stack trace:
 REQUEST_URI=/sanli/index.php?r=WxCourse/GetDetail&id=2
 HTTP_REFERER=https://servicewechat.com/wx50e47bbb4ec3c834/devtools/page-frame.html
 ---
+2021/12/08 19:24:52 [error] [exception.CException] CException: 属性 "ClubNews.news_content" 未被定义. in D:\software\php_software\wamp64\www\sanli\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\software\php_software\wamp64\www\sanli\framework\db\ar\CActiveRecord.php(145): CComponent->__get('news_content')
+#1 D:\software\php_software\wamp64\www\sanli\admin\controllers\WxCourseController.php(72): CActiveRecord->__get('news_content')
+#2 D:\software\php_software\wamp64\www\sanli\framework\web\actions\CInlineAction.php(49): WxCourseController->actionGetDetail()
+#3 D:\software\php_software\wamp64\www\sanli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\software\php_software\wamp64\www\sanli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\software\php_software\wamp64\www\sanli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\software\php_software\wamp64\www\sanli\framework\web\CWebApplication.php(282): CController->run('GetDetail')
+#7 D:\software\php_software\wamp64\www\sanli\framework\web\CWebApplication.php(141): CWebApplication->runController('WxCourse/GetDet...')
+#8 D:\software\php_software\wamp64\www\sanli\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 D:\software\php_software\wamp64\www\sanli\index.php(35): CApplication->run()
+#10 {main}
+REQUEST_URI=/sanli/index.php?r=WxCourse/GetDetail&id=1
+HTTP_REFERER=https://servicewechat.com/wx50e47bbb4ec3c834/devtools/page-frame.html
+---
+2021/12/08 19:54:39 [error] [exception.CException] CException: 属性 "ClubNews.news_content" 未被定义. in D:\software\php_software\wamp64\www\sanli\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\software\php_software\wamp64\www\sanli\framework\db\ar\CActiveRecord.php(145): CComponent->__get('news_content')
+#1 D:\software\php_software\wamp64\www\sanli\admin\controllers\WxCourseController.php(72): CActiveRecord->__get('news_content')
+#2 D:\software\php_software\wamp64\www\sanli\framework\web\actions\CInlineAction.php(49): WxCourseController->actionGetDetail()
+#3 D:\software\php_software\wamp64\www\sanli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\software\php_software\wamp64\www\sanli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\software\php_software\wamp64\www\sanli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\software\php_software\wamp64\www\sanli\framework\web\CWebApplication.php(282): CController->run('GetDetail')
+#7 D:\software\php_software\wamp64\www\sanli\framework\web\CWebApplication.php(141): CWebApplication->runController('WxCourse/GetDet...')
+#8 D:\software\php_software\wamp64\www\sanli\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 D:\software\php_software\wamp64\www\sanli\index.php(35): CApplication->run()
+#10 {main}
+REQUEST_URI=/sanli/index.php?r=WxCourse/GetDetail&id=1
+HTTP_REFERER=https://servicewechat.com/wx50e47bbb4ec3c834/devtools/page-frame.html
+---
+2021/12/08 19:55:10 [error] [exception.CException] CException: 属性 "ClubNews.news_content" 未被定义. in D:\software\php_software\wamp64\www\sanli\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\software\php_software\wamp64\www\sanli\framework\db\ar\CActiveRecord.php(145): CComponent->__get('news_content')
+#1 D:\software\php_software\wamp64\www\sanli\admin\controllers\WxCourseController.php(72): CActiveRecord->__get('news_content')
+#2 D:\software\php_software\wamp64\www\sanli\framework\web\actions\CInlineAction.php(49): WxCourseController->actionGetDetail()
+#3 D:\software\php_software\wamp64\www\sanli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\software\php_software\wamp64\www\sanli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\software\php_software\wamp64\www\sanli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\software\php_software\wamp64\www\sanli\framework\web\CWebApplication.php(282): CController->run('GetDetail')
+#7 D:\software\php_software\wamp64\www\sanli\framework\web\CWebApplication.php(141): CWebApplication->runController('WxCourse/GetDet...')
+#8 D:\software\php_software\wamp64\www\sanli\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 D:\software\php_software\wamp64\www\sanli\index.php(35): CApplication->run()
+#10 {main}
+REQUEST_URI=/sanli/index.php?r=WxCourse/GetDetail&id=1
+---
+2021/12/08 20:02:14 [error] [exception.CException] CException: 属性 "ClubList.sort" 未被定义. in D:\software\php_software\wamp64\www\sanli\framework\base\CComponent.php:130
+Stack trace:
+#0 D:\software\php_software\wamp64\www\sanli\framework\db\ar\CActiveRecord.php(145): CComponent->__get('sort')
+#1 D:\software\php_software\wamp64\www\sanli\admin\views\ClubList\index.php(42): CActiveRecord->__get('sort')
+#2 D:\software\php_software\wamp64\www\sanli\framework\web\CBaseController.php(126): require('D:\\software\\php...')
+#3 D:\software\php_software\wamp64\www\sanli\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\\software\\php...', Array, true)
+#4 D:\software\php_software\wamp64\www\sanli\framework\web\CController.php(872): CBaseController->renderFile('D:\\software\\php...', Array, true)
+#5 D:\software\php_software\wamp64\www\sanli\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#6 D:\software\php_software\wamp64\www\sanli\admin\components\BaseController.php(34): CController->render('index', Array)
+#7 D:\software\php_software\wamp64\www\sanli\admin\controllers\ClubListController.php(57): BaseController->_list(Object(ClubList), Object(CDbCriteria), 'index', Array)
+#8 [internal function]: ClubListController->actionIndex('')
+#9 D:\software\php_software\wamp64\www\sanli\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ClubListController), Array)
+#10 D:\software\php_software\wamp64\www\sanli\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClubListController), Object(ReflectionMethod), Array)
+#11 D:\software\php_software\wamp64\www\sanli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 D:\software\php_software\wamp64\www\sanli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 D:\software\php_software\wamp64\www\sanli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\software\php_software\wamp64\www\sanli\framework\web\CWebApplication.php(282): CController->run('index')
+#15 D:\software\php_software\wamp64\www\sanli\framework\web\CWebApplication.php(141): CWebApplication->runController('ClubList/index')
+#16 D:\software\php_software\wamp64\www\sanli\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 D:\software\php_software\wamp64\www\sanli\index.php(35): CApplication->run()
+#18 {main}
+REQUEST_URI=/sanli/index.php?r=ClubList/index&list_type=3
+HTTP_REFERER=http://localhost/sanli/index.php
+---
+2021/12/08 21:03:22 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1. The SQL statement executed was: SELECT * FROM `club_list` `t` WHERE id= LIMIT 1.
+2021/12/08 21:03:22 [error] [exception.CDbException] CDbException: CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1 in D:\software\php_software\wamp64\www\sanli\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\software\php_software\wamp64\www\sanli\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\software\php_software\wamp64\www\sanli\framework\db\ar\CActiveRecord.php(1359): CDbCommand->queryRow()
+#2 D:\software\php_software\wamp64\www\sanli\framework\db\ar\CActiveRecord.php(1464): CActiveRecord->query(Object(CDbCriteria))
+#3 D:\software\php_software\wamp64\www\sanli\admin\controllers\ClubNewsController.php(58): CActiveRecord->find('id=')
+#4 D:\software\php_software\wamp64\www\sanli\admin\controllers\ClubNewsController.php(46): ClubNewsController->saveData(Object(ClubNews), Array)
+#5 [internal function]: ClubNewsController->actionUpdate('2')
+#6 D:\software\php_software\wamp64\www\sanli\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ClubNewsController), Array)
+#7 D:\software\php_software\wamp64\www\sanli\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClubNewsController), Object(ReflectionMethod), Array)
+#8 D:\software\php_software\wamp64\www\sanli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\software\php_software\wamp64\www\sanli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\software\php_software\wamp64\www\sanli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\software\php_software\wamp64\www\sanli\framework\web\CWebApplication.php(282): CController->run('update')
+#12 D:\software\php_software\wamp64\www\sanli\framework\web\CWebApplication.php(141): CWebApplication->runController('clubNews/update')
+#13 D:\software\php_software\wamp64\www\sanli\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\software\php_software\wamp64\www\sanli\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/sanli/index.php?r=clubNews/update&id=2&news_type=0
+HTTP_REFERER=http://localhost/sanli/index.php?r=clubNews/update&id=2&news_type=0
+---
+2021/12/08 21:32:29 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1. The SQL statement executed was: SELECT * FROM `club_list` `t` WHERE id= LIMIT 1.
+2021/12/08 21:32:29 [error] [exception.CDbException] CDbException: CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 1' at line 1 in D:\software\php_software\wamp64\www\sanli\framework\db\CDbCommand.php:543
+Stack trace:
+#0 D:\software\php_software\wamp64\www\sanli\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 D:\software\php_software\wamp64\www\sanli\framework\db\ar\CActiveRecord.php(1359): CDbCommand->queryRow()
+#2 D:\software\php_software\wamp64\www\sanli\framework\db\ar\CActiveRecord.php(1464): CActiveRecord->query(Object(CDbCriteria))
+#3 D:\software\php_software\wamp64\www\sanli\admin\controllers\ClubNewsController.php(58): CActiveRecord->find('id=')
+#4 D:\software\php_software\wamp64\www\sanli\admin\controllers\ClubNewsController.php(46): ClubNewsController->saveData(Object(ClubNews), Array)
+#5 [internal function]: ClubNewsController->actionUpdate('1')
+#6 D:\software\php_software\wamp64\www\sanli\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(ClubNewsController), Array)
+#7 D:\software\php_software\wamp64\www\sanli\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ClubNewsController), Object(ReflectionMethod), Array)
+#8 D:\software\php_software\wamp64\www\sanli\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 D:\software\php_software\wamp64\www\sanli\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 D:\software\php_software\wamp64\www\sanli\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\software\php_software\wamp64\www\sanli\framework\web\CWebApplication.php(282): CController->run('update')
+#12 D:\software\php_software\wamp64\www\sanli\framework\web\CWebApplication.php(141): CWebApplication->runController('clubNews/update')
+#13 D:\software\php_software\wamp64\www\sanli\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 D:\software\php_software\wamp64\www\sanli\index.php(35): CApplication->run()
+#15 {main}
+REQUEST_URI=/sanli/index.php?r=clubNews/update&id=1&news_type=0
+HTTP_REFERER=http://localhost/sanli/index.php?r=clubNews/update&id=1&news_type=0
+---

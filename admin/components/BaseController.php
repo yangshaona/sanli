@@ -9,9 +9,9 @@ class BaseController extends CController {
         if($controllerId=='index'||$controllerId=='readBook'||$controllerId=='question')
             return parent::beforeAction($action);
  
-        if(Yii::app()->session['admin_id'] == null){
-            echo "<script>alert('请先登录');location.href='index.php'</script>";
-        }
+//        if(Yii::app()->session['admin_id'] == null){
+//            echo "<script>alert('请先登录');location.href='index.php'</script>";
+//        }
         return parent::beforeAction($action);
  
     }

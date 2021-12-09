@@ -65,8 +65,8 @@ public function getPath($f_id) {
     }
 
    public function getParentPath() {
-        return  "http://127.0.0.1/sanli/uploads/temp/";
-
+//        return  "http://127.0.0.1/sanli/uploads/temp/";
+       return "";
     }
 
   public function toNewPage($paction) {
